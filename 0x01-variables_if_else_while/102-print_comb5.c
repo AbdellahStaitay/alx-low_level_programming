@@ -23,7 +23,7 @@ int main(void)
                         putchar(' ');
                         putchar(h);
                         putchar(k);
-                        if (k != 57 || h != 57 || j != 57 || i != 57)
+                        if (i+j+h+k != 227 && i != 57 )
 				        {
 					        putchar(44);
 					        putchar(32);
