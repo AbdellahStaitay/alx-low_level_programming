@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/*
-* main - print the nature of the variable n
-* if it's <0 negative
-* if it's >0 positive
-* main function checks the nature of the variable n
-*/
+/**
+ * main - entry point
+ * Description: prints  if a number is positive or negative.
+ * Return: 0
+ */
 int main(void)
 {
 int n;
