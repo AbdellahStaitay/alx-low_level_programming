@@ -3,8 +3,8 @@
 #include <time.h>
 /**
 * main - entry point
-* description : prints the last digit and its nature based on condition
-* return : 0
+* Description : prints the last digit and its nature based on condition
+* Return : Allways 0 (succes)
 */
 int main(void)
 {
