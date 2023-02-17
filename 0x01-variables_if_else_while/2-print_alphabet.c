@@ -6,12 +6,11 @@
 */
 int main(void)
 {
-char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-int i;
-while (i < sizeof(alphabet) / sizeof(alphabet[1]))
+int ch = 'a';
+while (ch <= 'z')
 {
-putchar(alphabet[i]);
-i++;
+putchar(ch);
+ch++;
 }
 putchar('\n');
 return (0);    
