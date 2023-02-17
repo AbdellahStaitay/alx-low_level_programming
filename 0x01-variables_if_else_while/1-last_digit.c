@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-* main - entry point
-* Description : prints the last digit and its nature based on condition
-* Return value of main : Allways 0 (succes)
-*/
+ * main - Entry point
+ * Description: checks on the last digit of the assigned var
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
 int n;
