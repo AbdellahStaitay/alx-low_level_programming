@@ -6,21 +6,34 @@
  */
 int main(void)
 {
-	int i, j;
+	int i, j, h, k;
 
 	for (i = 48; i <= 57; i++)
 	{
-		for (j = 48; j <= 57; j++)
-        {
-				putchar(i);
-				putchar(j);
-				if (j != 57 || i != 57)
-				{
-					putchar(44);
-					putchar(32);
-				}
-        }
-	}
-	putchar(10);
+		for (j = 48; j <= 57; j++)	
+		{
+            for (h = 48; h <= 57; h++)
+	        {
+		        for (k = 48; k <= 57; k++)
+                {
+                   if ((i + j) < (h + k))
+                   {
+                        putchar(i);
+                        putchar(j);
+                        putchar(' ');
+                        putchar(h);
+                        putchar(k);
+                        if (k != 57 || h != 57 || j != 57 || i != 57)
+				        {
+					        putchar(44);
+					        putchar(32);
+				        }
+                   }
+                }
+            }
+        }    
+    }
+    putchar(10);
 	return (0);
 }
+
