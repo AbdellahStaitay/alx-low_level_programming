@@ -1,12 +1,12 @@
 #include <stdio.h>
 /**
-* main - entry point
-* description : print the alphabet in lower case
-* return : always 0
-*/
+ * main - Entry point
+ * Description: prints the alphabet in lowercase\n
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
-int ch = 'a';
+int ch ='a';
 while (ch <= 'z')
 {
 putchar(ch);
