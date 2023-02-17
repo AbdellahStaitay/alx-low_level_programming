@@ -1,21 +1,21 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: prints all combinations of single digits
+ * Description: prints all combinations of single digits using ASCII
  * Return: Always 0 (success)
  */
 int main(void)
 {
-	int num1, num2;
+	int i, j;
 
-	for (num1 = 48; num1 <= 57; num1++)
+	for (i = 48; i <= 57; i++)
 	{
-		for (num2 = 48; num2 <= 57; num2++)
-			if (num1 < num2)
+		for (j = 48; j <= 57; j++)
+			if (i < j)
 			{
-				putchar(num1);
-				putchar(num2);
-				if (num2 != 57 || num1 != 56)
+				putchar(i);
+				putchar(j);
+				if (j != 57 || i != 56)
 				{
 					putchar(44);
 					putchar(32);
