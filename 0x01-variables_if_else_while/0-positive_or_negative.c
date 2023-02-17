@@ -5,6 +5,7 @@
 * main - print the nature of the variable n
 * if it's <0 negative
 * if it's >0 positive
+* main function checks the nature of the variable n
 */
 int main(void)
 {
