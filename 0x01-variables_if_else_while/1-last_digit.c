@@ -4,7 +4,7 @@
 /**
 * main - entry point
 * Description : prints the last digit and its nature based on condition
-* Return : Allways 0 (succes)
+* Return value : Allways 0 (succes)
 */
 int main(void)
 {
