@@ -6,21 +6,22 @@
  */
 int main(void)
 {
-int i, j;
-for (i = '0'; i <= '9'; i++)
-{
-for (j = '0'; j <= '9'; j++)
-{
-if (i < j)
-{
-putchar(i);
-putchar(j);
-if (i != '8' || j != '9')
-putchar(44);
-putchar(32);
-}
-}
-}
-putchar(10);
-return (0);
+	int num1, num2;
+
+	for (num1 = 48; num1 <= 57; num1++)
+	{
+		for (num2 = 48; num2 <= 57; num2++)
+			if (num1 < num2)
+			{
+				putchar(num1);
+				putchar(num2);
+				if (num2 != 57 || num1 != 56)
+				{
+					putchar(44);
+					putchar(32);
+				}
+			}
+	}
+	putchar(10);
+	return (0);
 }
