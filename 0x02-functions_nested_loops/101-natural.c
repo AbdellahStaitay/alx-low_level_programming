@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- *print_times_table - n times table.
- *@n: the number defines the table.
+ *main - n times table.
+ *description: the number defines the table.
  *
  *Return: no return value
  */
