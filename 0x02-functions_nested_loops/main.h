@@ -4,12 +4,6 @@
  * Description: printd string
  * Return: Always 0 (success)
  */
-int prints(void)
-{
-    printf("_putchar\n");
-    return (0);
-}
-
 void print_alphabet(void)
 {
     int i;
