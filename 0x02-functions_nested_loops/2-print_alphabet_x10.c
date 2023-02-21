@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * rint_alphabet_x10 - Entry point
+ * print_alphabet_x10 - Entry point
  * Description: prints string
  * Return: Always 0 (success)
  */
