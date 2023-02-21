@@ -6,21 +6,19 @@
  */
 int main(void)
 {
-	int count;
-	int total;
-	unsigned long fib1 = 0, fib2 = 1, sum;
+	long int i, x = 1, y = 2, sum = 0, tSum = 0;
 
-	for (count = 0; count < 10; count++)
+	for (i = 0; i < 49; i++)
 	{
-		sum = fib1 + fib2;
-		fib1 = fib2;
-		fib2 = sum;
-
-		if (sum % 2 == 0)
+		if ((y % 2 == 0) && (y <= 4000000))
 		{
-			total += sum;
+			tSum = tSum + y;
 		}
+		sum = x + y;
+		x = y;
+		y = sum;
+
 	}
-	printf("%d\n", total);
+	printf("%ld\n", tSum);
 	return (0);
 }
