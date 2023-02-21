@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-	print();
+	prints();
 	return (0);
 }

@@ -4,7 +4,7 @@
  * Description: printd string
  * Return: Always 0 (success)
  */
-int print(void)
+int prints(void)
 {
     printf("_putchar\n");
     return (0);
