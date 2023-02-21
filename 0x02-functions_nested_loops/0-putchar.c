@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - prints a string
  * description : using printf
@@ -6,6 +6,6 @@
 */
 int main(void)
 {
-	printf("_putchar\n");
+	print();
 	return (0);
 }
