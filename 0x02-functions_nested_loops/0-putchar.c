@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * main - prints a string
- * description : using printf
- * returns : always 0
-*/
+ * main - Entry point
+ * Description: prints string
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
 	print();
