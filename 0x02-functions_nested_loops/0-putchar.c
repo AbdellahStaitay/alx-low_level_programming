@@ -5,7 +5,12 @@
  * Return: Always 0 (success)
  */
 int main(void)
-{
-	prints();
+{   
+    char text[] = "_putchar";
+    for (int i = 0; i <= 7; i++)
+    {
+        _putchar(text[i]);
+    }
+    _putchar('\n');
 	return (0);
 }

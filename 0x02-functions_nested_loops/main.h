@@ -1,25 +1,14 @@
-#include <stdio.h>
-/**
- * print - Entry point
- * Description: printd string
- * Return: Always 0 (success)
+#ifndef MAIN_H
+#define MAIN_H
+
+/*
+ * File: main.h
+ * Auth: Yonas Leykun
+ * Desc: Header file containing declarations for all functions
+ *       used in the 0x02-functions_nested_loops directory.
  */
-int prints(void)
-{
-    printf("_putchar\n");
-    return (0);
-}
-/**
- * print_alphabet - Entry point
- * Description: printd alphabet
- * Return: Always 0 (success)
- */
-void print_alphabet(void)
-{
-    int i;
-    for (i = 'a'; i <= 'z'; i++)
-    {
-        putchar(i);
-    }
-    putchar('\n');
-}
+
+int _putchar(char ch);
+void print_alphabet(void);
+
+#endif
