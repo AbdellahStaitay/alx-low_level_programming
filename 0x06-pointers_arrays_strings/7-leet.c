@@ -1,41 +1,26 @@
 #include "main.h"
 /**
  * *leet - upper string
- * @text: input
+ * @str: input
  * Return:pinter
  */
 
-char *leet(char *text)
+char *leet(char *str)
 {
-	int i;
-	int len = 0;
+	int indx1 = 0, indx2;
+	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
-	for (i = 0; text[i] != '\0'; i++)
+	while (str[indx1])
 	{
-		len++;
+		for (indx2 = 0; indx2 <= 7; indx2++)
+		{
+			if (str[indx1] == leet[indx2] ||
+			    str[indx1] - 32 == leet[indx2])
+				str[indx1] = indx2 + '0';
+		}
+
+		indx1++;
 	}
-	for (i = 0; i < len; i++)
-	{
-		if (text[i] == 'a' || text[i] == 'A')
-		{
-			text[i] = '4';
-		}
-		if (text[i] == 'e' || text[i] == 'E')
-		{
-			text[i] = '3';
-		}
-		if (text[i] == 'o' || text[i] == 'O')
-		{
-			text[i] = '0';
-		}
-		if (text[i] == 't' || text[i] == 'T')
-		{
-			text[i] = '7';
-		}
-		if (text[i] == 'l' || text[i] == 'L')
-		{
-			text[i] = '1';
-		}
-	}
-	return (text);
+
+	return (str);
 }
