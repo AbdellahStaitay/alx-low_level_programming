@@ -1,32 +1,37 @@
 #include "main.h"
 /**
  * *cap_string - upper string
- * @text: input
+ * @str: input
  * Return:pinter
  */
 
-char *cap_string(char *text)
+char *cap_string(char *str)
 {
-	int i;
-	int len = 0;
+	int index = 0;
 
-	for (i = 0; text[i] != '\0'; i++)
+	while (str[index])
 	{
-		len++;
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
+
+		if (str[index - 1] == ' ' ||
+		    str[index - 1] == '\t' ||
+		    str[index - 1] == '\n' ||
+		    str[index - 1] == ',' ||
+		    str[index - 1] == ';' ||
+		    str[index - 1] == '.' ||
+		    str[index - 1] == '!' ||
+		    str[index - 1] == '?' ||
+		    str[index - 1] == '"' ||
+		    str[index - 1] == '(' ||
+		    str[index - 1] == ')' ||
+		    str[index - 1] == '{' ||
+		    str[index - 1] == '}' ||
+		    index == 0)
+			str[index] -= 32;
+
+		index++;
 	}
-	for (i = 0; i < len; i++)
-	{
-		if (text[i] == ',' || text[i] == ';' || text[i] == '.' ||
-		text[i] == '!' || text[i] == '?' || text[i] == '"' ||
-		text[i] == '(' || text[i] == ')' || text[i] == '{' ||
-		text[i] == '}' || text[i] == '\n' || text[i] == ' ' ||
-		text[i] == '\t' || text[i] == 0)
-		{
-			if (text[i + 1] >= 97 && text[i + 1] <= 122)
-			{
-				text[i + 1] = text[i + 1] - 32;
-			}
-		}
-	}
-	return (text);
+
+	return (str);
 }
