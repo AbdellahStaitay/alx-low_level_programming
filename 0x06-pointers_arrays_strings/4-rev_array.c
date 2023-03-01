@@ -12,12 +12,26 @@ void reverse_array(int *a, int n)
 	int tmp;
 	int half;
 
-	half = n / 2;
-	while (half--)
+	if (n % 2 == 0)
 	{
-		tmp = a[n - i - 1];
-		a[n - i - 1] = a[i];
-		a[i] = tmp;
-		i++;
+		half = n / 2;
+		while (half--)
+		{
+			tmp = a[n - i - 1];
+			a[n - i - 1] = a[i];
+			a[i] = tmp;
+			i++;
+		}
+	}
+	else
+	{
+		half = (n - 1) / 2;
+		while (half--)
+		{
+			tmp = a[n - i - 1];
+			a[n - i - 1] = a[i];
+			a[i] = tmp;
+			i++;
+		}
 	}
 }
