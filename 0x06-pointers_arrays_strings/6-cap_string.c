@@ -20,7 +20,7 @@ char *cap_string(char *text)
 		text[i] == '!' || text[i] == '?' || text[i] == '"' ||
 		text[i] == '(' || text[i] == ')' || text[i] == '{' ||
 		text[i] == '}' || text[i] == '\n' || text[i] == ' ' ||
-		text[i] == 9 || text[i] == 11)
+		text[i] == '\t' || text[i] == 0)
 		{
 			if (text[i + 1] >= 97 && text[i + 1] <= 122)
 			{
