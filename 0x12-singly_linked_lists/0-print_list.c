@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdio.h>
 /**
  * print_list - print the elements of the linked list
  * @h: linked list
