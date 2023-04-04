@@ -1,12 +1,12 @@
 #include "lists.h"
+
 /**
- * free_listint - add node to the list
- * @head: linked lists
- * Return: Void
-*/
+ * free_listint - Frees a listint_t list.
+ * @head: A pointer to the head of the listint_t list to be freed.
+ */
 void free_listint(listint_t *head)
 {
-	listint_t *tmp = malloc(sizeof(listint_t));
+	listint_t *tmp;
 
 	while (head)
 	{
