@@ -6,15 +6,15 @@
 */
 size_t print_listint(const listint_t *h)
 {
-	listint_t *tmp;
+	listint_t *tmp = malloc(sizeof(listint_t));
 	size_t nodes;
 
 	nodes = 0;
-	tmp = h;
 	if (tmp == NULL)
 	{
 		return (1);
 	}
+	tmp = h;
 	for (tmp; tmp->next != '\0'; tmp = tmp->next)
 	{
 		printf("%d\n", tmp->n);
